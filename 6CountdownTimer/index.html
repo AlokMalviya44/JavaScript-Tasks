@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CountDown Timer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="main">
+        <form class="" action="">
+            <div id="input">
+                <div class="hours flex flex-col justify-center items-center gap-3">
+                    <label for="hours" class="text-3xl font-semibold">Hours</label>
+                    <input type="number" id="hours"
+                        class="text-black font-semibold text-4xl text-center h-16 w-28 rounded-none">
+                </div>
+                <div  class="min flex flex-col justify-center items-center gap-3">
+                    <label for="min" class="text-3xl font-semibold">Minutes</label>
+                    <input type="number" id="min"
+                        class="text-black font-semibold text-4xl text-center h-16 w-28 rounded-none">
+                </div>
+                <div class="sec flex flex-col justify-center items-center gap-3">
+                    <label for="sec" class="text-3xl font-semibold">Seconds</label>
+                    <input type="number" id="sec"
+                        class="text-black font-semibold text-4xl text-center h-16 w-28 rounded-none">
+                </div>
+            </div>
+            <div class="button">
+                <button class="px-10 font-normal py-3 bg-white text-black text-3xl rounded-full">Start</button>
+            </div>
+        </form>
+        <div class="timer hidden">
+            <div class="hours">
+                <h1 class="w-20px text-center text-6xl text-black mb-[10px]">Hours</h1>
+                <div class="rh w-[380px] h-[600px] bg-black rounded-xl flex items-center justify-center text-[300px] ">2</div>
+            </div>
+            <div class="min">
+                <h1 class="w-20px text-center text-6xl text-black mb-[10px]">Minutes</h1>
+                <div class="rm w-[380px] h-[600px] bg-black rounded-xl flex items-center justify-center text-[300px] ">12</div>
+            </div>
+            <div class="sec">
+                <h1 class="w-20px text-center text-6xl text-black mb-[10px]">Seconds</h1>
+                <div class="rs w-[380px] h-[600px] bg-black rounded-xl flex items-center justify-center text-[300px]">35</div>
+            </div>
+        </div>
+        <div class="over hidden"></div>
+        <div class="timeup hidden">
+            <h2>Time's Up</h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

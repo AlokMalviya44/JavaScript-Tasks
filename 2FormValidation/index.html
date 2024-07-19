@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="main">
+        <form action="">
+            <h1 class="text-4xl font-semibold mb-12">Form Validation</h1>
+            <div class="username">
+                <label for="username" class="text-xl font-semibold">Username</label>
+                <input type="text" id="username" class="ml-[20px] p-[7px] rounded-lg border-none" />
+            </div>
+            <div class="email">
+                <label for="email" class="text-xl font-semibold ml-[40px]">Email</label>
+                <input type="email" id="email" class="ml-[20px] p-[7px] rounded-lg border-none" />
+            </div>
+            <div class="password">
+                <label for="password" class="text-xl font-semibold">Password</label>
+                <input type="password" id="password" class="ml-[20px] p-[7px] rounded-lg border-none" />
+            </div>
+            <div class="button w-full flex items-center justify-center mt-[20px]">
+                <button id="submit" class="px-[20px] py-[8px] mb-10 bg-blue-900 text-white font-medium rounded-full">
+                    Submit
+                </button>
+            </div>
+        </form>
+        <div class="overlay absolute top-0 left-0 bgoverlay h-screen w-full py-[40px] flex justify-center z-[1] hidden">
+        </div>
+        <div
+            class="submit top-[40px] h-[200px] w-[400px] bg-white absolute z-[3] flex flex-col gap-[25px] items-center justify-center rounded-md hidden">
+            <h1 class="text-3xl font-semibold text-green-500">Form Submitted</h1>
+            <button id="subbtn" class="bg-red-600 px-[15px] py-[7px] rounded-full text-white">
+                close
+            </button>
+        </div>
+        <div class="error top-[40px] w-[400px] bg-white absolute z-[3] rounded-xl px-[20px] py-[20px] hidden">
+            <h1 class="text-3xl text-red-500 font-semibold text-center mb-[20px]">
+                Form Not Submitted !
+            </h1>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

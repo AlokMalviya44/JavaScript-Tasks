@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-4xl text-white font-semibold mt-10 underline">Interactive Quiz</h1>
+    <div class="quiz-container">
+        <div class="question">
+            <p>Q1. What is the capital of France?</p>
+            <ul>
+                <li><input type="radio" id="q1-a1" name="q1"><label for="q1-a1">Paris</label></li>
+                <li><input type="radio" id="q1-a2" name="q1"><label for="q1-a2">London</label></li>
+                <li><input type="radio" id="q1-a3" name="q1"><label for="q1-a3">Berlin</label></li>
+                <li><input type="radio" id="q1-a4" name="q1"><label for="q1-a4">Marseille</label></li>
+            </ul>
+            <button class="submit">Submit</button>
+            <div class="result"></div>
+        </div>
+        <div class="question">
+            <p>Q2. What is the largest planet in our solar system?</p>
+            <ul class="text-center">
+                <li><input type="radio" id="q2-a1" name="q2"><label for="q2-a1">Earth</label></li>
+                <li><input type="radio" id="q2-a2" name="q2"><label for="q2-a2">Saturn</label></li>
+                <li><input type="radio" id="q2-a3" name="q2"><label for="q2-a3">Jupiter</label></li>
+                <li><input type="radio" id="q2-a4" name="q2"><label for="q2-a4">Venus</label></li>
+            </ul>
+            <button class="submit">Submit</button>
+            <div class="result"></div>
+        </div>
+        <div class="question">
+            <p>Q3. Most modern TV's draw power even if turned off. The circuit the power is used in does what function?</p>
+            <ul>
+                <li><input type="radio" id="q3-a1" name="q3"><label for="q3-a1">Sound</label></li>
+                <li><input type="radio" id="q3-a2" name="q3"><label for="q3-a2">Remote Control</label></li>
+                <li><input type="radio" id="q3-a3" name="q3"><label for="q3-a3">Color Balance</label></li>
+                <li><input type="radio" id="q3-a4" name="q3"><label for="q3-a4">High Voltage</label></li>
+            </ul>
+            <button class="submit">Submit</button>
+            <div class="result"></div>
+        </div>
+        <div class="question">
+            <p>Q4. Who developed Yahoo?</p>
+            <ul>
+                <li><input type="radio" id="q4-a1" name="q4"><label for="q4-a1">Dennis Ritchie & Ken Thompson</label></li>
+                <li><input type="radio" id="q4-a2" name="q4"><label for="q4-a2">David Filo & Jerry Yang</label></li>
+                <li><input type="radio" id="q4-a3" name="q4"><label for="q4-a3">Vint Cerf & Robert Kahn</label></li>
+                <li><input type="radio" id="q4-a4" name="q4"><label for="q4-a4">Steve Case & Jeff Bezos</label></li>
+            </ul>
+            <button class="submit">Submit</button>
+            <div class="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

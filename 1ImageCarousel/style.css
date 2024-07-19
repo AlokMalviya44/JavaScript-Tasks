@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.head{
+    position: absolute;
+    top: 0%; 
+    font-weight: 100;
+    font-size: 52px;
+}
+.carousel{
+    width: 69vw ;
+    height: 40vw;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.carousel img{
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+}
+.arrow{
+    height: 30px ;
+    width: 30px;
+    background-color: rgb(13, 78, 91);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 15px;
+
+}
+.arrow h3{
+    color: wheat;
+    font-size: 20px;
+}
